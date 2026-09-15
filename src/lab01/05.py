@@ -1,5 +1,5 @@
-a,b,c=input().split()
-print('ФИО:',a, b, c,)
+Z,b,c=input().split()
+print('ФИО:',Z, b, c,)
 
-print('Инициалы:'f'{a[0].upper()}{b[0].upper()}{c[0].upper()}')
-print('Длина (символов):', len(a)+len(b)+len(c)+2)#добавляю два пробела между фио
+print('Инициалы:'f'{Z[0].upper()}{b[0].upper()}{c[0].upper()}')
+print('Длина (символов):', len(Z)+len(b)+len(c)+2)#добавляю два пробела между фио
