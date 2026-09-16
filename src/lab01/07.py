@@ -1,4 +1,4 @@
-a=input()
+a=input('in: ')
 h=''
 for i in range(len(a)):
     if a[i]==a[i].upper():
