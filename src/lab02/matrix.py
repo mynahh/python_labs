@@ -38,12 +38,12 @@ def result(function, cases) -> None:
 
         print(f"{value} -> {result}")
         
-if __name__ == "__main__":
-    print("transpose:")
+if __name__ == '__main__':
+    print('transpose:')
     result(transpose, [[[1, 2, 3]], [[1], [2], [3]], [[1, 2], [3, 4]], [], [[1, 2], [3]]])
 
-    print("\nrow_sums:")
+    print('\nrow_sums:')
     result(row_sums, [[[1, 2, 3], [4, 5, 6]], [[-1, 1], [10, -10]], [[0, 0], [0, 0]], [[1, 2], [3]]])
 
-    print("\ncol_sums:")
+    print('\ncol_sums:')
     result(col_sums, [[[1, 2, 3], [4, 5, 6]], [[-1, 1], [10, -10]], [[0, 0], [0, 0]], [[1, 2], [3]]])

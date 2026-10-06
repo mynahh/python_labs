@@ -39,12 +39,12 @@ def result(function, cases) -> None:
         print(f"{value} -> {result}")
 
 
-if __name__ == "__main__":
-    print("min_max:")
+if __name__ == '__main__':
+    print('min_max:')
     result(min_max, [[3, -1, 5, 5, 0], [42], [-5, -2, -9], [], [1.5, 2, 2.0, -3.1]])
 
-    print("\nunique_sorted:")
+    print('\nunique_sorted:')
     result(unique_sorted, [[3, 1, 2, 1, 3], [], [-1, -1, 0, 2, 2], [1.0, 1, 2.5, 2.5, 0]])
 
-    print("\nflatten:")
+    print('\nflatten:')
     result(flatten, [[[1, 2], [3, 4]], [[1, 2], (3, 4, 5)], [[1], [], [2, 3]], [[1, 2], "ab"]])

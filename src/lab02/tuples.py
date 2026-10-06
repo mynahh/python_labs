@@ -20,7 +20,7 @@ def format_record(rec: tuple[str,str, float]) -> str:
     group = group.strip()
     if not group:
         raise ValueError('группа не может быть пустой строкой')
-    return f"{surname} {initials}, гр. {group}, GPA {gpa:.2f}"
+    return f'{surname} {initials}, гр. {group}, GPA {gpa:.2f}'
 def result(function, cases) -> None:
     for value in cases:
         try:
@@ -29,8 +29,8 @@ def result(function, cases) -> None:
             result = error
 
         print(f"{value} -> {result}")
-if __name__ == "__main__":
-    print("format_record:")
+if __name__ == '__main__':
+    print('format_record:')
     result(format_record, [
     ("Иванов Иван Иванович", "BIVT-25", 4.6),
     ("Петров Пётр", "IKBO-12", 5.0),
