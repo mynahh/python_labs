@@ -82,22 +82,21 @@ def transpose(mat: list[list[float | int]]) -> list[list]:
 ```
 ![](/images/lab02/transposeexit.png)
 ### row_sums
+Функция проверяет на правильность матрицу с помощью функции check, а после возвращает генератор с суммой для каждой строки матрицы.
 ```python
 def row_sums(mat: list[list[float | int]]) -> list[float]:
     check(mat)
     return [sum(row) for row in mat]
 ```
-
-Функция проверяет на правильность матрицу с помощью функции check, а после возвращает генератор с суммой для каждой строки матрицы.
 ![](/images/lab02/rowsumsexit.png)
 ### col_sums
+Функция проверяет на правильность матрицу с помощью функции check, а после возвращает генератор с суммой для каждой строки транспонированной матрицы.
 ```python
 def col_sums(mat: list[list[float | int]]) -> list[float]:
     check(mat)
     return(row_sums(transpose(mat)))
 ```
 ![](/images/lab02/colsumsexit.png)
-Функция проверяет на правильность матрицу с помощью функции check, а после возвращает генератор с суммой для каждой строки транспонированной матрицы.
 ## tuples.py
 ```python
 def format_record(rec: tuple[str,str, float]) -> str:
