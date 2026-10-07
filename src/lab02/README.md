@@ -87,6 +87,7 @@ def row_sums(mat: list[list[float | int]]) -> list[float]:
     check(mat)
     return [sum(row) for row in mat]
 ```
+
 Функция проверяет на правильность матрицу с помощью функции check, а после возвращает генератор с суммой для каждой строки матрицы.
 ![](/images/lab02/rowsumsexit.png)
 ### col_sums
