@@ -98,6 +98,7 @@ def col_sums(mat: list[list[float | int]]) -> list[float]:
 ```
 ![](/images/lab02/colsumsexit.png)
 ## tuples.py
+Функция проветряет ФИО, группу и GPA на правильность, если данные правильные, выводит фамилию с заглавной буквы вместе со склееными инициалами, группу и GPA(до двх знаков после запятой)
 ```python
 def format_record(rec: tuple[str,str, float]) -> str:
     if not isinstance(rec, tuple):
@@ -123,7 +124,6 @@ def format_record(rec: tuple[str,str, float]) -> str:
         raise ValueError('группа не может быть пустой строкой')
     return f'{surname} {initials}, гр. {group}, GPA {gpa:.2f}'
 ```
-Функция проветряет ФИО, группу и GPA на правильность, если данные правильные, выводит фамилию с заглавной буквы вместе со склееными инициалами, группу и GPA(до двх знаков после запятой)
 ![](/images/lab02/tuplesexit.png)
 
 
