@@ -66,7 +66,7 @@ def check(mat: list[list[float | int]]) -> None:
                 raise ValueError('Матрица должна быть прямоугольной')
 ```
 ### transpose
-С помощью функции check проверяет матрицу, за тем по каждому столбцу создаёт новую строку новый матрица, сохраняя их в res.
+С помощью функции check проверяет матрицу, за тем по каждому столбцу создаёт строку новый матрицы, сохраняя их в res.
 ```python
 def transpose(mat: list[list[float | int]]) -> list[list]:
     check(mat)
@@ -96,7 +96,7 @@ def col_sums(mat: list[list[float | int]]) -> list[float]:
     return(row_sums(transpose(mat)))
 ```
 ![](/images/lab02/colsumsexit.png)
-Функция проверяет на правильность матрицу с помощью функции check, а после возвращает генератор с суммой для каждрй строки транспонированной матрицы.
+Функция проверяет на правильность матрицу с помощью функции check, а после возвращает генератор с суммой для каждой строки транспонированной матрицы.
 ## tuples.py
 ```python
 def format_record(rec: tuple[str,str, float]) -> str:
