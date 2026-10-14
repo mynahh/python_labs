@@ -2,6 +2,10 @@
 ## text.py
 ### normilize 
 ```python
+Функция получает на вход строку и два значения, нормализует текст с учетом критериев
+ casefold = True значит .casefold инчае .lower()
+ yo2e = True заменяет инчане оставляет как есть
+после выводит готовый текст
 def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
     text=str(text)
     if casefold:
@@ -22,7 +26,7 @@ print(normalize("ёжик, Ёлка") )
 ```
 ![](/images/lab03/count_freq.png)
 ### tokenize
-Выделяет слова из текста и выводит список строк
+Функция получает на вход строку, выделяет слова из текста и выводит список строк
 ```python
 import re
 def tokenize(text: str) -> list[str]:
