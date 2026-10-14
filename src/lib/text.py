@@ -26,3 +26,4 @@ def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
     sp=sorted(freq.items(), key=lambda kv: (-kv[1], kv[0]))
     return sp[0:n]
 
+
