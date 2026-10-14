@@ -21,7 +21,7 @@ def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
 print(normalize("ПрИвЕт\nМИр\t") )
 print(normalize("ёжик, Ёлка") )
 ```
-![](/images/lab03/count_freq.png)
+![](/images/lab03/normilize.png)
 ### tokenize
 Функция получает на вход строку, выделяет слова из текста и выводит список строк
 ```python
