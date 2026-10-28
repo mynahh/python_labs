@@ -38,6 +38,7 @@ def csv_to_xlsx(csv_path: str, xlsx_path: str) -> None:
     
 if __name__=='__main__':
     csv_to_xlsx('data/samples/lab05/cities.csv','data/out/lab05/cities.xlsx')
+    csv_to_xlsx('data/samples/lab05/csvxlsx.csv','data/out/lab05/csvxlsx.xlsx')
     print('готово')
 #python3 -m src.lab05.csv_xlsx
     

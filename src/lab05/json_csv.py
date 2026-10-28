@@ -55,7 +55,9 @@ def csv_to_json(csv_path: str, json_path: str) -> None:
         json.dump(data, jf, ensure_ascii=False, indent=2)
     
 if __name__=='__main__':
-    json_to_csv('data/samples/people.json','data/out/people_from_json.csv')
-    csv_to_json('data/samples/people.csv','data/out/people_from_csv.json')
-    print('результаты записаны')
+    json_to_csv('data/samples/lab05/people.json','data/out/lab05/people_from_json.csv')
+    json_to_csv('data/samples/lab05/jsonsvc.json','data/out/lab05/jsonsvc_from_json.csv')
+    csv_to_json('data/samples/lab05/people.csv','data/out/lab05/lpeople_from_csv.json')
+    csv_to_json('data/samples/lab05/svcjson.csv','data/out/lab05/svcjson_from_csv.json')
+    print('готово')
 #python3 -m src.lab05.json_csv
