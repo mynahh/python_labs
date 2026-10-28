@@ -42,4 +42,3 @@ if __name__=='__main__':
     print('готово')
 #python3 -m src.lab05.csv_xlsx
     
-    
