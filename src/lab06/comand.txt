@@ -1,0 +1,13 @@
+
+python3 -m src.lab06.cli_convert json2csv --in data/samples/lab05/people.json --out data/out/lab06/people.csv
+python3 -m src.lab06.cli_convert csv2json --in data/samples/lab05/people.csv --out data/out/lab06/people.json
+python3 -m src.lab06.cli_convert csv2xlsx --in data/samples/lab05/people.csv --out data/out/lab06/people.xlsx
+
+python3 -m src.lab06.cli_text stats --input data/samples/lab05/people.txt --top 5
+python3 -m src.lab06.cli_text cat --input data/samples/lab05/people.csv -n
+
+python3 -m src.lab06.cli_text cat --help
+python3 -m src.lab06.cli_text stats --help
+python3 -m src.lab06.cli_convert json2csv --help
+python3 -m src.lab06.cli_convert csv2json --help
+python3 -m src.lab06.cli_convert csv2xlsx --help
