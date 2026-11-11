@@ -19,7 +19,6 @@ def main():
     args = parser.parse_args()
 
     if args.command == "cat":
-         args = parser.parse_args()
          path = Path(args.input)
          with path.open(encoding="utf-8") as file:
             for number, line in enumerate(file, start=1):
@@ -28,6 +27,7 @@ def main():
                 else:
                     print(line, end="")
     elif args.command == "stats":
+         path = Path(args.input)
          if args.top < 1:
             stats_parser.error("--top должен быть положительным целым числом")
          text = path.read_text(encoding="utf-8")
@@ -41,3 +41,4 @@ def main():
             print(f"{word}: {count}")
 if __name__ == "__main__":
     main()
+    
